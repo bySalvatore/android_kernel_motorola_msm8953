@@ -300,8 +300,10 @@ struct msm_sensor_id_info_t {
 	unsigned short sensor_id;
 	unsigned short sensor_id2;
 	unsigned short sensor_id_mask;
+#ifdef CONFIG_MSMB_CAMERA_2017
 	unsigned short sensor_model_id_reg_addr;
 	unsigned short sensor_model_id;
+#endif
 };
 
 struct msm_camera_sensor_slave_info {
