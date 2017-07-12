@@ -642,8 +642,9 @@ static int pn544_suspend(struct device *device)
 static int pn544_resume(struct device *device)
 {
 	struct i2c_client *client = to_i2c_client(device);
+	struct pn544_dev *pn544_dev = i2c_get_clientdata(client);
 
-	if (device_may_wakeup(&client->dev))
+	if (device_may_wakeup(&client->dev) && pn544_dev->irq_enabled)
 		disable_irq_wake(client->irq);
 	return 0;
 }
