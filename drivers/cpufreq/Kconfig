@@ -108,12 +108,12 @@ config CPU_FREQ_DEFAULT_GOV_ZZMOOVE
 	help
 	  Use zzmoove by def
 	  
-config CPU_FREQ_DEFAULT_GOV_OPTIMUS
-	bool "OPTIMUS"
-	select CPU_FREQ_GOV_OPTIMUS
+config CPU_FREQ_DEFAULT_GOV_LIONFISH
+	bool "lionfish"
+	select CPU_FREQ_GOV_LIONFISH
 	select CPU_FREQ_GOV_PERFORMANCE
 	help
-	  Use OPTIMUS by def
+	  Use lionfish by def
 
 config CPU_FREQ_DEFAULT_GOV_CONSERVATIVE
 	bool "conservative"
@@ -239,10 +239,10 @@ config CPU_FREQ_GOV_ZZMOOVE
 	help
 	  'zzmoove' – This
 	  
-config CPU_FREQ_GOV_OPTIMUS
-	tristate "'optimus' cpufreq policy governor"
+config CPU_FREQ_GOV_LIONFISH
+	tristate "'lionfish' cpufreq policy governor"
 	help
-	  'optimus' – This
+	  'lionfish' – This
 
 config CPUFREQ_DT
 	tristate "Generic DT based cpufreq driver"
