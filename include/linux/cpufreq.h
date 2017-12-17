@@ -498,9 +498,9 @@ extern struct cpufreq_governor cpufreq_gov_userspace;
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_ONDEMAND)
 extern struct cpufreq_governor cpufreq_gov_ondemand;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_ondemand)
-#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_OPTIMUS)
-extern struct cpufreq_governor cpufreq_gov_optimus;
-#define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_optimus)
+#elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_LIONFISH)
+extern struct cpufreq_governor cpufreq_gov_lionfish;
+#define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_lionfish)
 #elif defined(CONFIG_CPU_FREQ_DEFAULT_GOV_ZZMOOVE)
 extern struct cpufreq_governor cpufreq_gov_zzmoove;
 #define CPUFREQ_DEFAULT_GOVERNOR	(&cpufreq_gov_zzmoove)
